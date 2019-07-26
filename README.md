@@ -1,1 +1,1 @@
-# sdacademy
+# Software Development Academy - Kaunas
