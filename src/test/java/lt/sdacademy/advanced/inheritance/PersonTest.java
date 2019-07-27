@@ -33,5 +33,6 @@ public class PersonTest {
     public void testPrintInfo() {
         Being p = new Person("Rutenis", "Turcinas");
         p.printInfo();
+        p.callOverridedMethod();
     }
 }

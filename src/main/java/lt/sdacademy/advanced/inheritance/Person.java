@@ -13,6 +13,12 @@ public class Person extends Human {
         this.setGender(true);
     }
 
+    @Override
+    public void printInfo() {
+        System.out.println("Person: " + isGender());
+        super.printInfo();
+    }
+
     public String getName() {
         return name;
     }
