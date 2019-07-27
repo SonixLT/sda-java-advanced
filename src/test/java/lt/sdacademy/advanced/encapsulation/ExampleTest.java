@@ -26,4 +26,14 @@ public class ExampleTest {
 
         assertEquals(initialValue, e.getTitle());
     }
+
+    @Test
+    public void testAccessLimit() {
+        Example e = new Example();
+
+        assertEquals("Default", e.getTitle());
+        assertEquals("Default", e.getTitle());
+        assertEquals("Default", e.getTitle());
+        assertEquals(null, e.getTitle());
+    }
 }
