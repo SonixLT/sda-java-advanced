@@ -28,4 +28,10 @@ public class PersonTest {
         Person p = new Person("Rutenis", "Turcinas");
         System.out.println(p);
     }
+
+    @Test
+    public void testPrintInfo() {
+        Being p = new Person("Rutenis", "Turcinas");
+        p.printInfo();
+    }
 }
