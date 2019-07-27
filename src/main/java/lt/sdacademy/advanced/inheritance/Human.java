@@ -3,6 +3,7 @@ package lt.sdacademy.advanced.inheritance;
 public class Human extends Being {
 
     private boolean gender;
+    protected String race;
 
     @Override
     public void printInfo() {
@@ -15,5 +16,9 @@ public class Human extends Being {
 
     public void setGender(boolean gender) {
         this.gender = gender;
+    }
+
+    public void printRace() {
+        System.out.println(this.race);
     }
 }

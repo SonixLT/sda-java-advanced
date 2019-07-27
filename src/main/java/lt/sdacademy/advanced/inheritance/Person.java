@@ -6,11 +6,13 @@ public class Person extends Human {
 
     private String name;
     private String surname;
+    public String race = "Black";
 
     public Person(String name, String surname) {
         this.name = name;
         this.surname = surname;
         this.setGender(true);
+        super.race = "White";
     }
 
     @Override
@@ -40,7 +42,9 @@ public class Person extends Human {
         return "Person{" +
             "name='" + name + '\'' +
             ", surname='" + surname + '\'' +
-            ", gender='" + this.isGender() + '\'' +
+            ", gender='" + isGender() + '\'' +
+            ", human race='" + super.race + '\'' +
+            ", person race='" + race + '\'' +
             '}';
     }
 }

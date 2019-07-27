@@ -30,6 +30,12 @@ public class PersonTest {
     }
 
     @Test
+    public void testRace() {
+        Person p = new Person("Rutenis", "Turcinas");
+        p.printRace();
+    }
+
+    @Test
     public void testPrintInfo() {
         Being p = new Person("Rutenis", "Turcinas");
         p.printInfo();
