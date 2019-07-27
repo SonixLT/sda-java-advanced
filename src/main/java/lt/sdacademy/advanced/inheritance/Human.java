@@ -18,6 +18,22 @@ public class Human extends Being {
         this.gender = gender;
     }
 
+    public String getInformation() {
+        return "Gender: " + gender + ", race: " + race;
+    }
+
+    public String getInformation(String format) {
+        return String.format(format, gender, race);
+    }
+
+    public void printNumber(Integer n) {
+        System.out.println("integer " + n);
+    }
+
+    public void printNumber(Number n) {
+        System.out.println("number " + n);
+    }
+
     public void printRace() {
         System.out.println(this.race);
     }

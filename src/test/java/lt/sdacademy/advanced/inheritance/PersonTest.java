@@ -36,6 +36,19 @@ public class PersonTest {
     }
 
     @Test
+    public void testOverload() {
+        Person p = new Person("Rutenis", "Turcinas");
+        System.out.println(p.getInformation());
+        System.out.println(p.getInformation("Format %b, %s"));
+    }
+
+    @Test
+    public void testOverload2() {
+        Human p = new Person("Rutenis", "Turcinas");
+        p.printNumber(null);
+    }
+
+    @Test
     public void testPrintInfo() {
         Being p = new Person("Rutenis", "Turcinas");
         p.printInfo();
